@@ -29,11 +29,13 @@ nav ul li {
 
 nav ul li .home{
     background-color: white;
+    color: black;
     font-weight: bolder;
 }
 
 nav ul li .myproject{
     background-color: white;
+    color: black;
     font-weight: 500;
 }
 
