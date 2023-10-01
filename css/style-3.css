@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond','Playfair Display', serif;
+    text-decoration: none;   
+    background-color: #d0d6d1;
+}
+
+nav, nav ul, nav ul li, .nav-left a, nav ul li img, .nav-right {
+    background-color: #fff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-size: 20px;
+}
+.nav-left {
+    margin-left: 5%;
+    flex: 60%; 
+}
+
+.nav-left a {
+    color: black;
+}
+
+nav ul li .home{
+    font-weight: bolder;
+}
+
+nav ul li .myproject{   
+    font-weight: 500;
+}
+
+.nav-right { 
+    flex: 40%;
+    text-align: end;
+    margin-right: 100px;
+}
+
+.nav-right a {
+    background-color: black;
+    width: 80px;
+    color: white;
+    font-size: 20px;
+    padding: 8px 20px;
+    margin-right: -30px;
+    border-radius: 8px;
+}
+
+.project-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+  
+.project-form .form-container {
+    width: 600px;
+}
+  
+.project-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-container label, .checkbox p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.form-container .date {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    
+.project-form form input, textarea {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    resize: none;
+}
+
+.project-form .checkbox-l {
+    display: inline-flex;
+    align-items: start;
+    margin-right: 30%;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.project-form .checkbox-i{
+    width: 1em;
+    height: 1em;
+    margin-right: 10px;
+}
+
+.project-form .input-project-image-group label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    color:gray;
+    border: 1px groove gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn .submit {
+    position: relative;
+    left: 82%;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100px;
+    margin: 30px 0;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.blog-project-container , .blog-project-container h1, .blog-contents, .blog-card, .blog-card h3,.blog-card a, .blog-card h4, .blog-card p, .blog-card .btn-blog, .blog-card .icon, .blog-card .icon i
+{
+    background-color: white;
+}
+
+.blog-project-container {
+    border-top: 1px groove white;
+    width: 100%;
+}
+
+.blog-project-container h1{
+    margin-top: 40px;
+    font-size: 3em;
+    text-align: center;
+}
+
+.blog-project-container .blog-contents {
+    padding: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.blog-project-container .blog-card {
+    margin-top: 30px;
+    margin-left: 5%;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.blog-project-container .blog-card img {
+    border-radius: 10px 10px 0 0;
+    width: 300px;
+    height: 200px;
+}
+
+.blog-project-container .blog-card a {
+    color: black;
+}
+
+.blog-project-container .blog-card h4{
+    color: gray;
+}
+
+.blog-project-container .blog-card p {
+    margin-bottom: 20px;
+}
+
+.blog-project-container .icon i {
+    font-size: 30px;
+    margin: 20px 10px 10px;
+}
+
+.blog-project-container .btn-blog {
+    margin: 10px 5px 0;
+}
+
+.btn-blog .btn-blog-edit {
+    width: 140px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-blog .btn-blog-delete {
+    width: 140px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

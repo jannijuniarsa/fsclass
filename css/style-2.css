@@ -4,63 +4,67 @@
     margin: 0;
     padding: 0;
     font-family: 'EB Garamond','Playfair Display', serif;
-    color: black;
     text-decoration: none;
     background-color: #d0d6d1;
 }
 
+nav, nav ul, nav ul li, .nav-left a, nav ul li img, .nav-right {
+    background-color: #fff;
+}
+
 nav {
-    background-color: white;
     display: flex;
     align-items: center;
     height: 10vh;
-    width: 100vw;
+    width: 100%;
 }
 
-nav ul { 
+nav ul {
     display: flex;
     list-style-type: none;
     align-items: center;
 }
 
 nav ul li {
-    margin-right: 25px;
+    margin-right: 20px;
     font-size: 20px;
 }
+.nav-left {
+    margin-left: 5%;
+    flex: 60%; 
+}
 
-nav ul li .home {   
-    background-color: white;
+.nav-left a {
+    color: black;
+}
+
+nav ul li .home{
     font-weight: bolder;
 }
 
-nav ul li .myproject{  
-    background-color: white;
+nav ul li .myproject{   
     font-weight: 500;
 }
 
-.nav-left { 
-    margin-left: 80px;
-    flex: 50%; 
-}
-
 .nav-right { 
-    flex: 50%;
+    flex: 40%;
     text-align: end;
     margin-right: 100px;
 }
 
 .nav-right a {
     background-color: black;
-    width: 100px;
-    font-size: 20px;
+    width: 80px;
     color: white;
-    padding: 8px 30px;
-    border-radius: 10px;
+    font-size: 20px;
+    padding: 8px 20px;
+    margin-right: -30px;
+    border-radius: 8px;
 }
 
 form {
     width: 600px;
-    margin: 50px auto;
+    margin: 5vh auto auto;
     padding: 20px;
 }
 
