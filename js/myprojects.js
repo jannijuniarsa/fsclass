@@ -34,10 +34,10 @@ function addBlog(event){
         checkboxes.push(nextJs.value)
     }
     if(reactJs.checked){
-        checkboxes.push(reactJs)
+        checkboxes.push(reactJs.value)
     } 
     if(typeScript.checked){
-        checkboxes.push(typeScript)
+        checkboxes.push(typeScript.value)
     } 
 
     let blog = {

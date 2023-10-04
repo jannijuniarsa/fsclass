@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>My Project Colections</title>
@@ -26,7 +27,7 @@
         <div class="project">
             <div class="project-form">
               <div class="form-container">
-                <form id="add-projects" onsubmit="addBlog(e)">
+                <form id="add-projects" onsubmit="addBlog(event)">
                   <h1>Add My Project</h1>
                   <div class="title">
                     <label for="input-project-name">Project Name</label>
@@ -34,12 +35,12 @@
                   </div>
                   <div class="date">
                     <div>
-                      <label for="startdate">Start Date</label>
-                      <input type="date" id="startdate" min="2023-09-25">
+                      <label for="startDate">Start Date</label>
+                      <input type="date" id="startDate" min="2023-09-25">
                     </div>
                     <div>
-                      <label for="enddate">End Date</label>
-                      <input type="date" id="enddate" min="2023-09-26">
+                      <label for="endDate">End Date</label>
+                      <input type="date" id="endDate" min="2023-09-26">
                     </div>
                   </div>
                   <div>
@@ -50,16 +51,16 @@
                   <div id="checkbox" class="checkbox">
                     <p>Technologies</p> <br>
                     <label class="checkbox-l">
-                      <input type="checkbox" class="checkbox-i">Node Js
+                      <input type="checkbox" class="checkbox-i" id="nodeJs" value="nodeJs">Node Js
                     </label>
                     <label class="checkbox-l">
-                      <input type="checkbox" class="checkbox-i">Next Js
+                      <input type="checkbox" class="checkbox-i" id="nextJs" value="nextJs">Next Js
                     </label> 
                     <label class="checkbox-l">
-                      <input type="checkbox" class="checkbox-i">React Js
+                      <input type="checkbox" class="checkbox-i" id="reactJs" value="reactJs">React Js
                     </label> 
                     <label class="checkbox-l">
-                      <input type="checkbox" class="checkbox-i">TypeScript
+                      <input type="checkbox" class="checkbox-i" id="typeScript" value="typeScript">TypeScript
                     </label>               
                   </div>
                   <label>Upload Image</label>
@@ -79,8 +80,8 @@
           </div>
           <div class="blog-project-container">
             <h1>My Project</h1>
-            <div class="blog-contents">
-              <div id="contents" class="blog-card">
+            <div id="contents" class="blog-contents">
+              <div class="blog-card">
                 <img src="img/gambar1.jpg">
                 <h3><a href="blog-project.html">Dumbsway Mobile App - 2021</a>
                   </h3>
