@@ -139,7 +139,7 @@ nav ul li .myproject{
     cursor: pointer;
 }
 
-.blog-project-container , .blog-project-container h1, .blog-contents, .blog-card, .blog-card h3,.blog-card a, .blog-card h4, .blog-card p, .blog-card .btn-blog, .blog-card .icon, .blog-card .icon i
+.blog-project-container , .blog-project-container h1, .blog-contents, .blog-card, .blog-card h3,.blog-card a, .blog-card h4, .blog-card p, .blog-card .btn-blog, .blog-card .icon, .blog-card .icon-tech i, .icon-tech img
 {
     background-color: white;
 }
@@ -188,8 +188,23 @@ nav ul li .myproject{
     margin-bottom: 20px;
 }
 
-.blog-project-container .icon i {
-    font-size: 30px;
+.blog-project-container .icon-tech{
+    display: inline-flex;
+    background-color: #fff;
+}
+
+#icon-nodeJs, #icon-nextJs, #icon-reactJs, #icon-typeScript {
+    background-color: #fff;
+}
+
+.blog-project-container .icon-tech i {
+    font-size: 25px;
+    margin: 20px 10px 10px;
+}
+
+.blog-project-container .icon-tech img {
+    width: 25px;
+    height: 25px;
     margin: 20px 10px 10px;
 }
 
