@@ -1,0 +1,105 @@
+nav, nav ul, nav ul li, .nav-left a, nav ul li img, .nav-right, #barsmenu {
+    background-color: #fff;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    height: 56px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-size: 20px;
+}
+.nav-left {
+    margin-left: 5%;
+    flex: 60%;
+    height: 56px; 
+}
+
+.nav-left a {
+    color: black;
+}
+
+nav ul li .home{
+    font-weight: bolder;
+}
+
+nav ul li .myproject{   
+    font-weight: 500;
+}
+
+.nav-right { 
+    flex: 40%;
+    text-align: end;
+    margin: 10px 50px 10px;
+}
+
+.nav-right a {
+    background-color: black;
+    width: 80px;
+    color: white;
+    font-size: 20px;
+    padding: 8px 20px;
+    margin-right: 4%;
+    border-radius: 10px;
+}
+
+#barsmenu {
+    display: none;
+    margin-right: 5%;
+}
+
+.hamburger-nav-container {
+    font-size: 23px;
+    list-style-type: none;
+    display: none;
+}
+  
+.hamburger-nav-container a {
+    text-decoration: none;
+    color:black;
+    background-color: #d0d6d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.hamburger-nav-container .hamburger-active {
+    text-decoration: none;
+    color: #fff;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 960px) {
+    .item-collapse {
+        display: none;
+    }
+    #barsmenu {
+        display: block;
+    }
+    #barsmenu i {
+        font-size: 38px;
+        background: white;
+    }
+    .hamburger-nav-container {
+        margin-top: 56px;
+    }
+}

@@ -1,32 +1,46 @@
-<html>
-    <head>
-        <title>Contact Me</title>
-        <link rel="stylesheet" href="css/style-2.css">
-    </head>
-    <body>
-        <nav>
-            <div class="nav-left">
-                <ul style="background-color: white;">
-                    <li style="background-color: white;">
-                        <img src="img/logo.png" alt="logo" style="background-color: white;" />
-                    </li>
-                    <li>
-                        <a class="home" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="myproject" href="myproject.html">My Project</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav-right" style="background-color: white;">
-                <a href="contact.html">Contact Me</a>
-            </div>
-        </nav>
-
-        <form>
-            <h1>Get In Touch</h1>
-            <div>
-                <label for="input-name">Name</label>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+</head>
+<body>
+  <!-- navigation bar -->
+  <nav>
+    <div class="nav-left">
+      <ul>
+        <li><img src="img/logo.png" alt="logo" /></li>
+        <li class="item-collapse"><a class="home" href="index.html">Home</a></li>
+        <li class="item-collapse"><a class="myproject" href="myproject.html">My Project</a></li>
+      </ul>
+    </div>
+    <div class="nav-right item-collapse">
+        <a class="contact" href="contact.html">Contact Me</a>
+    </div>
+    <div id="barsmenu">
+      <button
+        style="background-color: transparent; border: none; cursor: pointer"
+        onclick="openHamburger()"
+      >
+        <i class="fa-solid fa-bars" style="color: black;"></i>
+      </button>
+    </div>
+  </nav>
+  <div class="hamburger-nav-container" id="hamburger-nav-container">
+    <a href="index.html">Home</a>
+    <a href="myproject.html">My Project</a>
+    <a href="contact.html" class="hamburger-active">Contact Me</a>
+  </div> 
+  <!-- form validation -->
+  <form>
+    <h1>Get In Touch</h1>
+    <div>
+        <label for="input-name">Name</label>
                 <input type="text" id="input-name" required />
             </div>
             
@@ -59,6 +73,8 @@
                 <button type="button" onclick="submitData()">Submit</button>
             </div>
         </form>
-        <script src="js/contact.js"></script>
-    </body>
+    <script src="js/contact.js"></script>
+    <script src="js/navbar.js"></script>
+  </body>
 </html>
+                
