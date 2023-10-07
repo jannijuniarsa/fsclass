@@ -7,7 +7,7 @@ nav {
     position: fixed;
     top: 0;
     align-items: center;
-    height: 56px;
+    height: 10%;
     width: 100%;
 }
 
@@ -19,7 +19,7 @@ nav ul {
 
 nav ul li {
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 25px;
 }
 .nav-left {
     margin-left: 5%;
@@ -29,14 +29,6 @@ nav ul li {
 
 .nav-left a {
     color: black;
-}
-
-nav ul li .home{
-    font-weight: bolder;
-}
-
-nav ul li .myproject{   
-    font-weight: 500;
 }
 
 .nav-right { 
@@ -61,7 +53,7 @@ nav ul li .myproject{
 }
 
 .hamburger-nav-container {
-    font-size: 23px;
+    font-size: large;
     list-style-type: none;
     display: none;
 }
@@ -88,7 +80,14 @@ nav ul li .myproject{
     border: 1px solid #fff;
 }
 
-@media only screen and (max-width: 960px) {
+
+@media screen and (max-width: 991px){
+    .nav-right a {
+        margin-right: -3%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
     .item-collapse {
         display: none;
     }
@@ -101,5 +100,8 @@ nav ul li .myproject{
     }
     .hamburger-nav-container {
         margin-top: 56px;
+    }
+    nav{
+        height: 56px;
     }
 }

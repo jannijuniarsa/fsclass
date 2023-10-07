@@ -5,7 +5,15 @@
     padding: 0;
     font-family: 'EB Garamond','Playfair Display', serif;
     text-decoration: none;   
-    background-color: #d0d6d1;
+    background-color:#e3e7eb;
+}
+
+nav ul li .home, nav ul li .testimonials{
+    font-weight: 500;
+}
+
+nav ul li .myproject{   
+    font-weight: bolder;
 }
 
 .project-form {
@@ -43,7 +51,7 @@
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 20px;
-    background: #f4f3f3;
+    background: #f5f5dc;
     border: 1px solid #c4c4c4;
     border-radius: 8px;
     resize: none;
@@ -74,9 +82,12 @@
     cursor: pointer;
 }
 
+.btn {
+    display: flex;
+    justify-content: end;
+}
+
 .btn .submit {
-    position: relative;
-    left: 82%;
     background-color: black;
     color: white;
     border: none;
@@ -160,22 +171,77 @@
     margin: 10px 5px 0;
 }
 
-.btn-blog .btn-blog-edit {
+.btn-blog .btn-blog-edit, .btn-blog .btn-blog-delete {
     width: 140px;
-    height: 20px;
+    height: 25px;
     border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 
-.btn-blog .btn-blog-delete {
-    width: 140px;
-    height: 20px;
-    border-radius: 5px;
-    cursor: pointer;
+@media only screen and (max-width: 991px) {
+    .project {
+        margin-top: 15%;
+    } 
+    .project-form .form-container {
+        width: 70%;
+    }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 767px) {
     .project {
         margin-top: 56px;
     } 
+    .project-form .form-container {
+        width: 80%;
+    }
+    .project-form .form-container h1 {
+        font-size: x-large;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    .project-form form input, textarea, .form-container label, .checkbox p, .submit {
+        font-size: medium;
+    }
+    .project-form .checkbox-l {
+        margin-right: 20%;
+    }
+    .blog-project-container .blog-contents {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .btn-blog .btn-blog-edit,.btn-blog .btn-blog-delete {
+        margin-bottom: 15px;
+        font-size: medium;
+    }
+}
+@media only screen and (max-width: 379px) {
+    .project-form .checkbox-l {
+        margin-right: 10%;
+    }
+    .blog-project-container .blog-card {
+        width: 250px;
+    }
+    .blog-project-container .blog-card img {
+        width: 250px;
+        height: 200px;
+    }
+    .blog-project-container .icon-tech i {
+        font-size: medium;
+        margin: 20px 5px 10px;
+    }
+    .blog-project-container .icon-tech img {
+        width: 15px;
+        height: 15px;
+        margin: 20px 5px 10px;
+    }
+    .btn-blog .btn-blog-edit,.btn-blog .btn-blog-delete {
+        width: 110px;
+        margin-bottom: 10px;
+    }
 }

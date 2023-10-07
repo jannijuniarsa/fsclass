@@ -1,4 +1,3 @@
-
 let dataBlog = []
 
 function addBlog(event){
@@ -28,17 +27,25 @@ function addBlog(event){
     let checkboxes = []
 
     if(nodeJs.checked){
-      checkboxes.push(nodeJs.value) 
-    } 
+      checkboxes += `<i class="fa-brands fa-node-js"></i>`;
+    } else {
+      checkboxes += ``;
+    }
     if(nextJs.checked){
-        checkboxes.push(nextJs.value)
+      checkboxes += `<<img src="img/next-js.256x256.png" alt="">`
+    } else {
+      checkboxes += ``;
     }
     if(reactJs.checked){
-        checkboxes.push(reactJs.value)
-    } 
+      checkboxes += `<i class="fa-brands fa-react"></i>`
+    } else {
+      checkboxes += ``;
+    }
     if(typeScript.checked){
-        checkboxes.push(typeScript.value)
-    } 
+      checkboxes += `<img src="img/typescript.png" alt="">`
+    } else {
+      checkboxes += ``;
+    }
 
     let blog = {
         title,

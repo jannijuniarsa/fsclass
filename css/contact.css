@@ -5,17 +5,17 @@
     padding: 0;
     font-family: 'EB Garamond','Playfair Display', serif;
     text-decoration: none;
-    background-color: #d0d6d1;
+    background-color: #e3e7eb;
 }
 
 form {
-    width: 60%;
-    margin: 5vh auto auto;
+    width: 50%;
+    margin: 50px auto;
     padding: 20px;
 }
 
 form h1 {
-    font-size: 35px;
+    font-size: 5vh;
     margin-top: 5%;
     text-align: center;
 }
@@ -30,7 +30,7 @@ label {
 }
 
 input, select, textarea {
-    background-color: #dfdede;
+    background-color: #f5f5dc;
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -57,11 +57,39 @@ button {
 }
 
 button:hover {
-    background-color: red;
+    background-color: royalblue;
 }
 
-@media only screen and (max-width: 960px) {
-    .form {
+@media screen and (max-width: 991px) {
+    form {
+        width: 80%;
+        margin-top: 15%;
+    }
+    form h1 {
+        font-size: 40px;
+        margin-bottom: 10%;
+    }
+    .btn {
+        margin-top: 8%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #barsmenu {
+        margin-right: 2%;
+    }
+    form {
+        width: 70%;
         margin-top: 56px;
     } 
+    form h1 {
+        font-size: x-large;
+        margin-bottom: 10px;
+    }
+    label,input,select, textarea,button {
+        font-size: medium;
+    }
+    .btn {
+        margin-top: 5%;
+    }
 }
