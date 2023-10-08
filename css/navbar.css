@@ -82,8 +82,12 @@ nav ul li {
 
 
 @media screen and (max-width: 991px){
+    nav ul li {
+        font-size: 18px;
+    }
     .nav-right a {
         margin-right: -3%;
+        font-size: 18px;
     }
 }
 
