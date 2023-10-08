@@ -32,7 +32,7 @@ function addBlog(event){
       checkboxes += ``;
     }
     if(nextJs.checked){
-      checkboxes += `<<img src="img/next-js.256x256.png" alt="">`
+      checkboxes += `<img src="img/next-js.256x256.png" alt="">`
     } else {
       checkboxes += ``;
     }
