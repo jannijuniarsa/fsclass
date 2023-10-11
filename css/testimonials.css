@@ -93,13 +93,44 @@ nav ul li .testimonials {
 }
 
 @media only screen and (max-width: 991px) {
-    .testimonial {
-      width: 40%;
+    .container h1 {
+        font-size: 35px;
+        margin: 10% 0 10px;
     }
+    .testimonial {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+    .testimonial-card {
+        width: 40%;
+    }
+    .testimonial img {
+        height: 200px;
+    }    
 }
   
 @media only screen and (max-width: 767px) {
+    .container h1 {
+        font-size: 30px;
+        margin: 5% 0 10px;
+    }
     .testimonial {
       width: 100%;
+    }
+    .testimonial-card {
+        width: 100%;
+    }
+    .testimonial img {
+        height: 200px;
+    }
+    .rating-btn {
+        margin: 5px;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+    .rating-btn i {
+        font-size: 14px;
     }
 }
